@@ -3,7 +3,7 @@
 	const draggableItems = ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'];
 	let droppingChart = document.querySelector('.puzzle-pieces');
 	let puzzleB = document.querySelector('.puzzle-board');
-	let jumblesPieces = document.querySelectorAll('#buttonHolder img');
+	let jumbledPieces = document.querySelectorAll('#buttonHolder img');
 	let dropArea = document.querySelectorAll('.drop-zone');
 
 
@@ -46,6 +46,6 @@ e.currentTarget.appendChild(document.querySelector(`#${piece}`));
 		});
 		makingpuzzle(this.dataset.puzzleref);
 	}
-	jumblesPieces.forEach(button => button.addEventListener("click", initialState));
+	jumbledPieces.forEach(button => button.addEventListener("click", initialState));
 	makingpuzzle(0);
 })();
